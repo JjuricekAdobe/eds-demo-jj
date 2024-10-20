@@ -1,0 +1,15 @@
+name: Lint CSS
+
+on: [push, pull_request]
+
+jobs:
+  lint:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - name: Install Node.js
+        uses: actions/setup-node@v2
+        with:
+          node-version: '14'
+      - run: npm install stylelint stylelint-config-standard
+      - run: npx stylelint blocks/hero/hero.css --fix
