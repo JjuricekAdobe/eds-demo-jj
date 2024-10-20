@@ -8,13 +8,13 @@
   padding: 40px 24px;
   min-height: 300px;
 }
-
 .hero h1 {
-  max-width: 1200px;
-  margin-left: auto;
-  margin-right: auto;
-  color: var(--background-color);
-}
+    max-width: 40%;
+    margin-left: 2%;
+    padding: 10px;
+    margin-right: auto;
+    color: var(--background-color);
+    background-color: rgba(204, 66, 1, 0.2);
 
 .hero picture {
   position: absolute;
