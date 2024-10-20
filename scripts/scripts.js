@@ -1,3 +1,23 @@
+
+import {
+  buildBlock,
+  loadHeader,
+  loadFooter,
+  decorateButtons,
+  decorateIcons,
+  decorateSections,
+  decorateBlocks,
+  decorateTemplateAndTheme,
+  waitForFirstImage,
+  loadSection,
+  loadSections,
+  loadCSS,
+  getMetadata,
+  loadScript,
+  toCamelCase,
+  toClassName,
+} from './aem.js';
+
 const AUDIENCES = {
   mobile: () => window.innerWidth < 600,
   desktop: () => window.innerWidth >= 600,
@@ -31,24 +51,6 @@ const pluginContext = {
   toClassName,
 };
 
-import {
-  buildBlock,
-  loadHeader,
-  loadFooter,
-  decorateButtons,
-  decorateIcons,
-  decorateSections,
-  decorateBlocks,
-  decorateTemplateAndTheme,
-  waitForFirstImage,
-  loadSection,
-  loadSections,
-  loadCSS,
-  getMetadata,
-  loadScript,
-  toCamelCase,
-  toClassName,
-} from './aem.js';
 
 
 /**
